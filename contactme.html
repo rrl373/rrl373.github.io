@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<HTML lang = "en">
+    <HEAD>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <TITLE>
+            Contact Me
+            </TITLE>
+            <link rel = "icon" href = 
+            "IMG_0351.png" 
+                    type = "image/x-icon">
+        <STYLE>
+            .visualhidden{
+                display:none;
+            }
+            
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+                }
+            }
+
+            body{
+                background-color: rgb(255, 238, 203);
+                font-family:monospace, 'Courier New', Courier;
+                color:rgb(167, 93, 9);
+            }
+            
+            .navbar{
+                background-color:rgb(207, 135, 41);
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            
+            h1{
+                color: rgb(146, 71, 9);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            </STYLE>
+
+        <link href="cover.css" rel="stylesheet">    
+
+        </HEAD>
+        <BODY>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top" aria-label="navbar">
+                <div class = "container-fluid">
+                    <a href="homepage.html" class="navbar-brand">
+                    <img src="IMG_0351.png" class = "rounded-thumbnail" alt="naviLogo" width="30" heigh="24" 
+                        class="d-inline-block align-top">
+                        Home </a> 
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu"
+                        aria-controls="toggleMobileMenu"
+                        aria-expanded="false"
+                        aria-lable="Toggle navigation"
+                    >
+                    <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class = "navbar-nav text-center">
+                            <li>
+                                <a class="nav-link" href="education.html">Education</a>
+                                </li>
+                            <li>
+                                <a class="nav-link" href="work.html">Work Experience </a>
+                                </li>
+                        </ul>
+    
+                        <ul class = "navbar-nav ms-auto text-center">
+                            <li>
+                                <a class="nav-link bg-warning text-secondary" href="contactme.html"> Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="py-5 text-center"> </div>
+                    <div class="row g-5">
+                        <div class="col-md-5 col-lg-4 order-md-last">
+                          <h2 class="d-flex justify-content-between align-items-center mb-3">
+                            <h1>Get in Contact</h1>
+                          </h2>
+                          <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                              <div>
+                                <p style="color:rgb(167, 73, 19)";>Name: </p>
+                                <small class="text-muted">Rowen Lagtapon</small>
+                              </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                              <div>
+                                <p style="color:rgb(167, 73, 19)";>E-mail:</p>
+                                <small class="text-muted">rrl65@txstate.edu</small>
+                              </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                              <div>
+                                <p style="color:rgb(167, 73, 19)";>Phone Number:<p>
+                                <small class="text-muted">555-xxx-xxxx</small>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                    
+                    <div class="col-md-7 col-lg-8">
+                        <h1>Your Contact Information</h1>
+                        <p> If you would like me to contact you, please fill out the information below: </p>
+                        <form class="needs-validation" novalidate>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label for="firstName" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                              <div class="invalid-feedback">
+                                Valid first name is required.
+                              </div>
+                            </div>
+                
+                            <div class="col-sm-6">
+                              <label for="lastName" class="form-label">Last name</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                              <div class="invalid-feedback">
+                                Valid last name is required.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                                <label for="email" class="form-label">Phone Number 
+                                <input type="email" class="form-control" id="email" placeholder="555-xxx-xxxx">
+                                <div class="invalid-feedback">
+                                  Please enter a valid email address for shipping updates.
+                                </div>
+                              </div>
+
+                            <div class="col-12">
+                              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                              <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                              </div>
+                              <BR>
+                            </div>
+                
+                          </div>
+
+                          <button class="w-100 btn btn-warning btn-lg text-secondary" type="submit">Submit</button>
+                        </form>
+
+                      </div>
+            </div>
+                  <script src="form-validation.js"></script>
+                      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+                      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+                  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+                  </div>
+        </BODY></HTML>
