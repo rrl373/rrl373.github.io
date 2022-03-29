@@ -36,11 +36,11 @@
                 background-color: paleturquoise;
                 font-family: 'Arial Narrow', Arial, sans-serif;
                 color: rgb(82, 151, 179);
+                padding: 40px;
             }
             .sectionOne{
                 padding-top: 200px;
-                text-align:center;
-                background-color: paleturquoise;
+                height: 100vh;
             }
 
             .sectionTwo{
@@ -111,44 +111,55 @@
 
             <!-- sectioneOne: ABOUT ME -->
             
-            <section class="sectionOne py-5 text-center container-fluid">
-                <div class="row py-md-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="h1 fw-light">Rowen Lagtapon</h1><BR>
-                        <img src="IMG_0350.png" border="5" alt="Picture of Self" width="350" heigh="400">
-                        
-                        <h2><BR>An aspiring computer programmer and web designer.</h2>
-                        <p>With a Bachelor's of Arts in English Writing, with Minor's in Communication. I am currently working towards a Bachelor's of Arts in Computer Science. </p>
-                        <p>Known languages include: C++, Java, SQL, HTML, CSS. </p>
-                        <p>Currently learning: JavaScript, PHP, and Python. </p>
+            <section class="sectionOne">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <h1 class="h1 fw-light">Rowen Lagtapon</h1><BR>
+                            <img src="IMG_0350.png" border="5" alt="Picture of Self" width="350" height="400" class = "img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h2 id ="introText"><BR>Hello, my name is Rowen Lagtapon.</h2>
+                            <br><p id="test"> I am a programmer, working towards a Bachelor's in Computer Science. </p>
+                            <p> with an expected Graduation date of May 2022.</p>
+                            <br><p> Languages I have learned through my career at Texas State University: </p>
+                            <ul>
+                                <li> <p>Programming languages include: C++, Java </p> </li>
+                                    <li><p> Database: SQL on mySQL Workbench and Microsoft Servers </p></li>
+                                    <li><p>Web Development: HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Flask, Jinja Template. </p></li>
+                                    <li><p>Linux: Ubuntu, ipTables, Docker</p></li>
+                            </ul>
+                           <br><p> Currently, I have a Bachelor's of Arts in English Writing, with Minor's in Communication
+                                from Texas A&M University </p>
+                        </div>
                     </div>
                 </div>
             </section>
+            <br>
+            <div class = "row d-flex justify-content-center"">
+                <!-- secioneTwoA: Education Summary -->
+                <div class="col-md-4">
+                    <div class="h-100 p-5 sectionTwo border rounded-3">
+                        <h2>Education</h2>
+                        <p><BR>Currently attending Texas State University. </p>
+                        <p>Attempting second Bachelor's towards Computer Science.</p>
+                        <p><BR>Anticipated graduation is Spring 2022</p>
+                            <button class="btn btn-outline-secondary" onclick="location.href='education.html'" type="button">Go To Page</button>
+                    </div>
+                    </div>
+                    
+                <!-- secioneTwoB: Work Experience Summary -->
+                    <div class="col-md-4">
+                    <div class="h-100 p-5 sectionTwo border rounded-3">
+                        <h2>Work Experience</h2>
+                        <p><BR>Baylor Scott & White Health </p>
+                        <p>Patient Service Specialist 2</p>
+                        <p><BR>January 2019 - current</p>
+                            <button class="btn btn-outline-secondary" onclick="location.href='work.html'" type="button">Go To Page</button>
+                    </div>
+                    </div>
+            </div>
 
-            <!-- secioneTwoA: Education Summary -->
-              <div class="sectionOne row align-items-md-stretch">
-                <div class="col-md-6">
-                  <div class="h-100 p-5 sectionTwo border rounded-3">
-                    <h2>Education</h2>
-                    <p><BR>Currently attending Texas State University. </p>
-                    <p>Attempting second Bachelor's towards Computer Science.</p>
-                    <p><BR>Anticipated graduation is Spring 2022</p>
-                        <button class="btn btn-outline-secondary" onclick="location.href='education.html'" type="button">Read More</button>
-                  </div>
-                </div>
-                
-            <!-- secioneTwoB: Work Experience Summary -->
-                <div class="col-md-6">
-                  <div class="h-100 p-5 sectionTwo border rounded-3">
-                    <h2>Work Experience</h2>
-                    <p><BR>Baylor Scott & White Health </p>
-                    <p>Patient Service Specialist 2</p>
-                    <p><BR>January 2019 - current</p>
-                        <button class="btn btn-outline-secondary" onclick="location.href='work.html'" type="button">Read More</button>
-                  </div>
-                </div>
-              </div>
-        
               <div class="row align-items-md-stretch">
                 <CENTER><div class="h-100">
                     <BR><BR><BR>
@@ -158,7 +169,7 @@
                 </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+            <script src="./static/home.js"></script>
 
 
         </BODY>
